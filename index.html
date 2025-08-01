@@ -1,21 +1,2 @@
-pipeline {
-    agent any
-    stages {
-        stage('Clone') {
-            steps {
-                git branch: 'main', url: 'https://github.com/username/repo-name.git'
-            }
-        }
-        stage('Build') {
-            steps {
-                sh 'npm install' // or mvn clean install, etc.
-            }
-        }
-        stage('Deploy') {
-            steps {
-                sh 'scp -r * ubuntu@3.148.177.26:/var/www/html/index.html'
-            }
-        }
-    }
-}
-
+Rauf mansoor
+mubarak 
